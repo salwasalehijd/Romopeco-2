@@ -79,3 +79,18 @@ const video = document.querySelectorAll(".video").forEach((x) => {
 });
 
 ////////
+const videota = document.querySelectorAll(".video").forEach((x) => {
+  x.addEventListener("onclick", (event) => {
+    if (event.target.matches) {
+      console.log("mouse in");
+      x.play();
+    }
+  });
+
+  x.addEventListener("onclick", (event) => {
+    if (event.target.matches) {
+      console.log("mouse out");
+      x.pause();
+    }
+  });
+});
