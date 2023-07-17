@@ -62,35 +62,59 @@ for (var i = 0; i < btns.length; i++) {
 
 // video section
 
+// const video = document.querySelectorAll(".video").forEach((x) => {
+//   x.addEventListener("mouseenter", (event) => {
+//     if (event.target.matches) {
+//       console.log("mouse in");
+//       x.play();
+//     }
+//   });
+
+//   x.addEventListener("mouseleave", (event) => {
+//     if (event.target.matches) {
+//       console.log("mouse out");
+//       x.pause();
+//     }
+//   });
+// });
+
+
+// const videota = document.querySelectorAll(".video").forEach((x) => {
+//   x.addEventListener("onclick", (event) => {
+//     if (event.target.matches) {
+//       console.log("mouse in");
+//       x.play();
+//     }
+//   });
+
+//   x.addEventListener("onclick", (event) => {
+//     if (event.target.matches) {
+//       console.log("mouse out");
+//       x.pause();
+//     }
+//   });
+// });
+
+//////// changed gif section
+
+
 const video = document.querySelectorAll(".video").forEach((x) => {
   x.addEventListener("mouseenter", (event) => {
     if (event.target.matches) {
-      console.log("mouse in");
-      x.play();
+          x.setAttribute("src", "imgs/img.webp")
+
     }
   });
 
   x.addEventListener("mouseleave", (event) => {
     if (event.target.matches) {
-      console.log("mouse out");
-      x.pause();
+      x.removeAttribute("src")
+      x.setAttribute("src","imgs/image-gif.PNG")
     }
   });
 });
 
-////////
-const videota = document.querySelectorAll(".video").forEach((x) => {
-  x.addEventListener("onclick", (event) => {
-    if (event.target.matches) {
-      console.log("mouse in");
-      x.play();
-    }
-  });
 
-  x.addEventListener("onclick", (event) => {
-    if (event.target.matches) {
-      console.log("mouse out");
-      x.pause();
-    }
-  });
-});
+
+
+
