@@ -82,9 +82,6 @@ i {
   color: white;
   transition: all 0.5s;
 }
-.button:hover {
-  background-color: #aba5a585;
-}
 
 .greensquare {
   height: 130px;
@@ -165,7 +162,7 @@ font-weight: 500 !important;
 .video-container{
   width:65%;
   height:87%;
-  background-color: #237227;
+  /* background-color: #237227; */
   position: relative;
   z-index: 1;
 }
@@ -174,7 +171,9 @@ font-weight: 500 !important;
   height:100%;
   position: relative;
   object-fit: cover;
+  background-color: white;
 }
+
  /* .video-container::before{
   content:'  ';
   display: inline-block;
@@ -296,5 +295,30 @@ font-weight: 500 !important;
     margin-top: -45px;
     z-index: 99999;
 }
+.formnorm{
+  position: relative;
+  width: 100%;
+  background-color:aliceblue;
+  height:500px;
+}
+.form-circle{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 50px;
+  width: 50px;
+  background-color: #FFD544;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 
+
+
+button:hover{
+ background-color: #438747;
+
+}
+.card-body a:hover{
+  background-color: #438747;
+}
